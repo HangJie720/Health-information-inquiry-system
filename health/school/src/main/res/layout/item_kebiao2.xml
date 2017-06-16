@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:orientation="horizontal"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="1dp"
+            android:background="@color/textColor"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="课程名称"
+            android:gravity="center"
+            android:id="@+id/course"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="1dp"
+            android:background="@color/textColor"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="时间"
+            android:gravity="center"
+            android:id="@+id/time"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="1dp"
+            android:background="@color/textColor"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="地点"
+            android:gravity="center"
+            android:id="@+id/address"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="1dp"
+            android:background="@color/textColor"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="教师名"
+            android:id="@+id/teacher"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="1dp"
+            android:background="@color/textColor"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_alignBottom="@id/item"
+        android:layout_width="match_parent"
+        android:background="@color/textColor"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

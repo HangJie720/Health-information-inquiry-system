@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/fastandroiddev_common_header" />
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_below="@id/header"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/title"
+            android:hint="请输入内容"
+            android:background="@drawable/article_bg_big"
+            android:layout_width="match_parent"
+            android:layout_height="96dp" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/content"
+            android:layout_marginTop="15dp"
+            android:hint="请输入内容"
+            android:background="@drawable/article_bg_big"
+            android:layout_width="match_parent"
+            android:layout_height="196dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/teacher"
+        android:layout_below="@id/input"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/select"
+            android:textSize="18sp"
+            android:text="选择文件"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@id/select"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:text="在线播放,仅支持MP4格式"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:orientation="vertical"
+        android:background="@drawable/article_bg_big"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/course"
+            android:text="@string/item_course"
+            android:textSize="14dp"
+            android:textColor="@color/textColos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/time"
+            android:paddingTop="5dp"
+            android:text="@string/item_time"
+            android:textSize="14dp"
+            android:textColor="@color/textColos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/address"
+            android:paddingTop="5dp"
+            android:text="@string/item_address"
+            android:textSize="14dp"
+            android:textColor="@color/textColos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/teacher"
+            android:text="@string/item_teacher"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/textColos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

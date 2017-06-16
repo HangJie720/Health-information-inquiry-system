@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">教学辅助</string>
+
+    <!--主页-->
+    <string name="tab_course">课程</string>
+    <string name="tab_kebiao">课表</string>
+    <string name="tab_me">我的</string>
+
+    <string name="aboutUs">关于我们</string>
+    <string name="recommendShare">推荐分享</string>
+    <string name="versionUpdate">版本更新</string>
+    <string name="feedback">意见反馈</string>
+    <string name="cache">清除缓存</string>
+    <string name="logOut">退出登录</string>
+
+    <string name="item_course">课名：#course#</string>
+    <string name="item_time">时间：#time#</string>
+    <string name="item_address">地点：#address#</string>
+    <string name="item_teacher">教师：#teacher#</string>
+
+    <string name="week_1">周一</string>
+    <string name="week_2">周二</string>
+    <string name="week_3">周三</string>
+    <string name="week_4">周四</string>
+    <string name="week_5">周五</string>
+    <string name="week_6">周六</string>
+    <string name="week_7">周日</string>
+
+    <array name="week">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </array>
+
+    <array name="time">
+        <item>一二节</item>
+        <item>三四节</item>
+        <item>三四五节</item>
+        <item>六七节</item>
+        <item>六七八节</item>
+        <item>八九节</item>
+        <item>十十一节</item>
+        <item>十十一十二节</item>
+    </array>
+
+    <string name="share">教学辅助是一款很不错的应用，欢迎大家下载。</string>
+
+</resources>

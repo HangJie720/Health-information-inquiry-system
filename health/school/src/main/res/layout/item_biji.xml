@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:id="@+id/item"
+       android:background="@drawable/article_bg_big"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <com.ijustyce.fastandroiddev.ui.CircleImageView
+           android:id="@+id/header"
+           android:src="@mipmap/default_head"
+           android:layout_width="96dp"
+           android:layout_height="96dp" />
+
+       <LinearLayout
+           android:layout_toRightOf="@id/header"
+           android:layout_marginLeft="15dp"
+           android:orientation="vertical"
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/title"
+               android:text="我的\n笔记"
+               android:textSize="16dp"
+               android:singleLine="true"
+               android:ellipsize="end"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/content"
+               android:text="内容"
+               android:layout_marginTop="5dp"
+               android:textSize="13sp"
+               android:maxLines="3"
+               android:ellipsize="end"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</LinearLayout>

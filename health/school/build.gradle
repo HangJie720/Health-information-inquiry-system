@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.bugtags.library.plugin'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.ijustyce.school"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 14
+        versionName "1.3.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+bugtags {
+    appKey "173fab0fd0acfeaf0c33275339507a6f"  //这里是你的 appKey
+    appSecret "9f1da5055f9a68e26120c39736cbef3c"    //这里是你的 appSecret，管理员在设置页可以查看
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':fastandroiddev')
+    compile project(':umenglib')
+}

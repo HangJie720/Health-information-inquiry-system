@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="status_bar">#3492e9</color>
+    <color name="status_bar_dark">#3492e9</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="home_text">#fd2424</color>
+    <color name="home_Untext">#666666</color>
+    <color name="fragment_bg">#EEEEEE</color>
+    <color name="white">#FFF</color>
+
+    <color name="background">#efeff4</color>   //   主背景颜色
+    <color name="my_background">#f7feff</color>     //  界面主色调
+    <color name="hint">#cecece</color>
+    <color name="line">#e2e2e2</color>
+    <color name="button_bg">#66b2d4</color>
+    <color name="button_bg1">#686868</color>
+    <color name="textColos">#575757</color>
+    <color name="textColos1">#ffffff</color>
+    <color name="btn_blue">#2094d3</color>
+
+</resources>

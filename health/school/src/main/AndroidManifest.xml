@@ -1,0 +1,103 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ijustyce.school">
+
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- umeng -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--录音-->
+    <uses-permission  android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- getui -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="getui.permission.GetuiService.com.sunday.newstroe" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="icon,label,theme"
+        android:supportsRtl="false"
+        android:name=".IApplication"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.GuideActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.MainActivity" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.LoginActivity" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.RegisterActivity" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.NewKeCheng" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.CourseDetail" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.NewBiJi" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.NewBiJi2" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.AboutActivity" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.VideoPlay" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".activity.SearchCourse" />
+
+        <!--配置自适应屏幕-->
+        <meta-data android:name="design_width" android:value="720" />
+        <meta-data android:name="design_height" android:value="1280" />
+
+        <!--umeng配置-->
+        <meta-data android:value="56ecc76e67e58e57aa00093b" android:name="UMENG_APPKEY" />
+        <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL" />
+
+    </application>
+
+</manifest>
